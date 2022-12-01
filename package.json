@@ -1,0 +1,37 @@
+{
+  "name": "graphql-typeorm",
+  "private": true,
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon -w src -x node lib/index.js",
+    "build": "babel src -d lib",
+    "dev": "npm build && npm start",
+    "test": "npm build"
+  },
+  "dependencies": {
+    "@accounts/graphql-api": "^0.17.0",
+    "@accounts/password": "^0.17.0",
+    "@accounts/server": "^0.17.0",
+    "@accounts/typeorm": "^0.17.0",
+    "@graphql-modules/core": "0.7.9",
+    "apollo-server": "2.8.1",
+    "graphql": "14.4.2",
+    "graphql-toolkit": "0.5.4",
+    "pg": "7.12.0",
+    "typeorm": "0.2.18"
+  },
+  "devDependencies": {
+    "@accounts/types": "^0.17.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@types/graphql": "14.2.3",
+    "@types/node": "12.7.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "cross-env": "^5.2.0",
+    "nodemon": "1.19.1"
+  },
+  "description": "This example demonstrate how to use [accounts-js](https://github.com/accounts-js/accounts) with PostgreSQL thanks to the amazing [@accounts/typeorm](https://www.npmjs.com/package/@accounts/typeorm) plugin built by (https://github.com/birkir/)[@birkir]for his awesome project: (https://github.com/birkir/prime)[PrimeCMS].",
+  "author": ""
+}
